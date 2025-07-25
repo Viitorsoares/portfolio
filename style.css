@@ -91,7 +91,7 @@ main {
 
 .stacks-content h3 {
     color: var(--color-white);
-    font-size: 1.15rem;
+    font-size: 1.4rem;
     margin-left: 20px;
 }
 
@@ -105,12 +105,12 @@ main {
     display: flex;
     align-items: center;
     position: relative;
-    margin: 10px;
+    margin: 2px;
     padding: 10px;
 }
 
 .stacks ul li img {
-    width: 40px;
+    width: 50px;
     height: auto;
     transition: transform .3s ease;
 }
@@ -134,15 +134,59 @@ main {
     height: 100vh;
     width: 50%;
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: red;
+    position: relative;
+    z-index: 1;
+    background-image: url(img/img1.jpg);
+    background-size: cover;
+    background-position: top center;
 }
 
-.links img {
+.person-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(270deg, transparent 30%, var(--color-black));
+
+}
+
+.wrapper-profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-profile-photo img {
+    width: 50%;
+    padding: 14px;
+    margin: 10px 15px;
+    border-radius: 50%;
+    background: 
+        radial-gradient(rgba(0,0,0,0.15) 60%, transparent 0),
+        radial-gradient(#000 68%, transparent 0),
+        linear-gradient(to top right, #ffa500 0%, #ff1493 100%)
+}
+
+.links a img {
     width: 30px;
     height: 30px;
+    margin: 10px;
+    filter: brightness(.8);
+    transition: all .3s ease;
 }
+
+.links a img:hover {
+    transform: scale(1.15);
+    filter: brightness(1);
+}
+
+/* final da primeira página */
 
 @keyframes written_text {
     100% {
