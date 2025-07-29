@@ -18,6 +18,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 main {
     height: 100vh;
     width: 100vw;
@@ -304,7 +308,7 @@ main {
 /* Final da página sobre */
 
 .projects {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background: var(--color-black);
     display: flex;
@@ -313,9 +317,10 @@ main {
 }
 
 .projects-title h2 {
-    margin: 3rem 1.5rem;
+    text-align: center;
+    margin: 50px auto 15px auto;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: var(--color-white);
 }
 
@@ -324,16 +329,15 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    height: 400px;
-    margin-top: 1rem;
     color: var(--color-white);
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
 .card-project {
-    width: 250px;
-    height: 400px;
-    padding: 30px 20px 20px;
-    margin: 0px 10px;
+    width: 300px;
+    height: 450px;
+    padding: 20px;
     position: relative;
     background: var(--color-white);
     display: flex;
@@ -362,8 +366,8 @@ main {
 }
 
 .img-project {
-    height: 200px;
-    width: 200px;
+    height: 240px;
+    width: 250px;
     position: relative;
     overflow: hidden;
     border-radius: 30px;
@@ -380,6 +384,49 @@ main {
     top: 0;
     left: 0;
     border: 2px solid var(--color-white);
+    transition: transform .3s ease-out;
+    cursor: pointer;
+}
+
+.img-project img:hover {
+    transform: scale(1.1);
+}
+
+.content-project span {
+    color: var(--color-black);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: .75rem auto .5rem auto;
+}
+
+.content-project p {
+    color: var(--color-blue);
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: .1rem 0rem;
+    text-align: justify;
+}
+
+.cta-project {
+    width: 200px;
+    margin: auto auto 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta-project a {
+    padding: 5px 10px;
+    font-size: .9rem;
+    color: var(--color-white);
+    background: var(--color-purple);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: opacity .3s ease;
+}
+
+.cta-project a:hover {
+    opacity: .7;
 }
 
 @keyframes written_text {
