@@ -23,8 +23,42 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+    position: fixed;
+    z-index: 2;
+    background: transparent;
+}
+
+.header-title h1 {
+    color: var(--color-white);
+    font-size: 1.6rem;
+    transition: opacity .3s ease;
+}
+
+.header-title h1:hover {
+    opacity: .8;
+}
+
+nav {
+    max-width: 350px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li {
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 #person {
