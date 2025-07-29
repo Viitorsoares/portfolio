@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     list-style: none;
+    text-decoration: none;
 }
 
 :root {
@@ -189,7 +190,7 @@ main {
     transform: scale(1.15);
     filter: brightness(1);
 }
-/* final da primeira página */
+/* end of the first page */
 
 .about {
     height: 100vh;
@@ -304,8 +305,7 @@ main {
     transition: all .3s ease;
     filter: brightness(.8);
 }
-
-/* Final da página sobre */
+/* end of the page about */
 
 .projects {
     min-height: 100vh;
@@ -421,12 +421,72 @@ main {
     color: var(--color-white);
     background: var(--color-purple);
     border-radius: 10px;
-    text-decoration: none;
     transition: opacity .3s ease;
 }
 
 .cta-project a:hover {
     opacity: .7;
+}
+/* End projects */
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 100%;
+    background-color: var(--color-black);
+}
+
+.contact-icon-content h2 {
+    margin: 3rem;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: var(--color-white);
+}
+
+.contact-icons-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contact-icon-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0rem 3rem;
+    padding: 1rem;
+}
+
+.contact-icon {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+    background: var(--color-white);
+    border-radius: 50%;
+}
+
+.contact-icon i {
+    font-size: 1.4rem;
+}
+
+.contact-info span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.contact-info p {
+    margin: .25rem 0rem;
+    color: var(--color-white);
+}
+
+.contact-info a {
+    margin: .25rem 0rem;
+    color: var(--color-white);
 }
 
 @keyframes written_text {
