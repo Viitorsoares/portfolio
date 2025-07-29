@@ -23,7 +23,11 @@ body {
     overflow-x: hidden;
 }
 
-main {
+header {
+    
+}
+
+#person {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -192,7 +196,7 @@ main {
 }
 /* end of the first page */
 
-.about {
+#about {
     height: 100vh;
     width: 100vw;
     background: var(--color-black);
@@ -306,8 +310,7 @@ main {
     filter: brightness(.8);
 }
 /* end of the page about */
-
-.projects {
+#projects {
     min-height: 100vh;
     width: 100vw;
     background: var(--color-black);
@@ -429,16 +432,17 @@ main {
 }
 /* End projects */
 
-.contacts {
+#contacts {
     display: flex;
     flex-direction: column;
     height: 60vh;
-    width: 100%;
+    width: 100vw;
     background-color: var(--color-black);
+    align-items: center;
 }
 
 .contact-icon-content h2 {
-    margin: 3rem;
+    margin: 5rem 3rem 0rem 3rem;
     padding: 1rem;
     font-size: 1.7rem;
     color: var(--color-white);
@@ -464,17 +468,17 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1.5rem;
+    margin-right: 1rem;
     background: var(--color-white);
     border-radius: 50%;
 }
 
 .contact-icon i {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .contact-info span {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     color: var(--color-white);
 }
@@ -482,12 +486,21 @@ main {
 .contact-info p {
     margin: .25rem 0rem;
     color: var(--color-white);
+    font-size: .8rem;
 }
 
 .contact-info a {
+    display: block;
     margin: .25rem 0rem;
+    font-size: .8rem;
     color: var(--color-white);
 }
+
+.contact-info a:hover {
+    transition: color .3s ease;
+    color: var(--color-blue);
+}
+/* End contact */
 
 @keyframes written_text {
     100% {

@@ -6,16 +6,33 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
     
-    <title>Portfolio</title>
+    <title>Portfólio</title>
 </head>
 <body>
-    <!-- Person-->
-    <main>
+    <!-- Header -->
+    <header>
+        <a href="/" class="header-title">
+            <h1>VS.dev</h1>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="#person"></a>Home</li>
+                <li><a href="#about"></a>Sobre</li>
+                <li><a href="#projects"></a>Projetos</li>
+                <li><a href="#contacts"></a>Contatos</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Person -->
+    <section id="person">
         <div class="person-content">
             <div class="person-name">
                 <h1>Olá, <span></span></h1>
@@ -91,10 +108,10 @@
                 </a>
             </div>
         </div>
-    </main>
+    </section>
 
-    <!--About-->
-    <section class="about">
+    <!-- About -->
+    <section id="about">
         <div class="background-about">
             <div class="img-wrapper">
                 <img src="img/img.2.jpg" alt="imagem de notebook">
@@ -129,8 +146,8 @@
         </div>
     </section>
 
-    <!--Projects-->
-    <section class="projects">
+    <!-- Projects -->
+    <section id="projects">
         <div class="projects-title">
             <h2>PROJETOS 🧩</h2>
         </div>
@@ -285,7 +302,8 @@
 
     </section>
 
-    <section class="contacts">
+    <!-- Contacts -->
+    <section id="contacts">
         <div class="contact-icon-content">
             <h2>Contato 📞</h2>
         </div>
@@ -306,7 +324,7 @@
                     <i class="fa-solid fa-envelope"></i>
                 </div>
                 <div class="contact-info">
-                    <span>E-mail:</span>
+                    <span>E-mail</span>
                     <a href="/">vitorgabriel@gmail.com</a>
                 </div>
             </div>
@@ -316,7 +334,7 @@
                     <i class="fa-brands fa-whatsapp"></i>
                 </div>
                 <div class="contact-info">
-                    <span>Whatsapp:</span>
+                    <span>Whatsapp</span>
                     <a href="/">55 (18) 99660-8363</a>
                 </div>
             </div>
