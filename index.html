@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
+    <!-- external sources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <!-- css files and libs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     
     <title>Portfólio</title>
@@ -23,10 +26,10 @@
 
         <nav>
             <ul>
-                <li><a href="#person"></a>Home</li>
-                <li><a href="#about"></a>Sobre</li>
-                <li><a href="#projects"></a>Projetos</li>
-                <li><a href="#contacts"></a>Contatos</li>
+                <li><a href="#person">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contacts">Contatos</a></li>
             </ul>
         </nav>
     </header>
@@ -41,51 +44,34 @@
             </div>
 
             <div class="stacks-content">
-                <h3>Techs: </h3>
+                <h3>Tecnologia: </h3>
 
                 <div class="stacks">
                     <ul>
                         <li>
-                            <div class="stacks-effect" data="HTML">
-                                <img src="svg/icons8-html-5 (1).svg" alt="html-icon">
-                            </div>
+                            <img src="svg/icons8-html-5 (1).svg" alt="html-icon">
                         </li>
                         <li>
-                            <div class="stacks-effect" data="CSS">
-                                <img src="svg/icons8-css3 (1).svg" alt="css-icon">
-                            </div>
+                            <img src="svg/icons8-css3 (1).svg" alt="css-icon">
                         </li>
                         <li>
-                            <div class="stacks-effect" data="JAVASCRIPT">
-                                <img src="svg/icons8-javascript (1).svg" alt="js-icon">
-                            </div>
+                            <img src="svg/icons8-javascript (1).svg" alt="js-icon">
                         </li>
                         <li>
-                            <div class="stacks-effect" data="REACT">
-                                <img src="svg/icons8-react (1).svg" alt="react-icon">
-                            </div>
+                            <img src="svg/icons8-react (1).svg" alt="react-icon">                          
                         </li>
                         <li>
-                            <div class="stacks-effect" data="NODE">
-                                <img src="svg/icons8-node-js.svg" alt="node-icon">
-                            </div>
+                            <img src="svg/icons8-node-js.svg" alt="node-icon">
                         </li>
-                        <li>
-                            <div class="stacks-effect" data="BOOTSTRAP">
-                                <img src="svg/icons8-bootstrap.svg" alt="bootstrap-icon">
-                            </div>
+                        <li>                         
+                            <img src="svg/icons8-bootstrap.svg" alt="bootstrap-icon">
                         </li>
-                        <li>
-                            <div class="stacks-effect" data="SASS">
-                                <img src="svg/icons8-sass.svg" alt="sass-icon">
-                            </div>
+                        <li>      
+                            <img src="svg/icons8-sass.svg" alt="sass-icon">
                         </li>
-                        <li>
-                            <div class="stacks-effect" data="GIT">
-                                <img src="svg/icons8-git.svg" alt="git-icon">
-                            </div>
+                        <li> 
+                            <img src="svg/icons8-git.svg" alt="git-icon">
                         </li>
-                        
                     </ul>
                 </div>
             </div>
@@ -140,7 +126,7 @@
             </h4>
 
             <div class="btn-cta">
-                <button>Currículo</button>
+                <button><a href="" download="certificado_css-onebitcode.pdf"></a>currículo</button>
             </div>
 
         </div>
@@ -148,156 +134,133 @@
 
     <!-- Projects -->
     <section id="projects">
+
         <div class="projects-title">
             <h2>PROJETOS 🧩</h2>
         </div>
 
-        <div class="wrapper-projects">
-
-            <div class="card-project">
-                <div class="content-project">
-                    <div class="img-project">
-                        <a href="/">
-                            <img src="img/conversor.jpg" alt="">
-                        </a>
+        <div class="container-projects">
+            <div class="swiper mySwiper">
+                <!-- wrapper-projects -->
+                <div class="swiper-wrapper">
+    
+                    <!-- content-project -->
+                    <div class="swiper-slide card-project">
+                        <div class="img-project">
+                            <a href="/">
+                                <img src="img/conversor.jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <span>Conversor de moedas</span>
+                        <p>Esse projeto, simula um conversor de moedas</p>
+    
+                        <div class="cta-project">
+                            <a href="/">
+                                Código
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="/">
+                                Site
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
                     </div>
-
-                    <span>Conversor de moedas</span>
-                    <p>Esse projeto, simula um conversor de moedas</p>
-
-                    <div class="cta-project">
-                        <a href="/">
-                            Código
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="/">
-                            Site
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
+    
+                    <div class="swiper-slide card-project">
+                        <div class="img-project">
+                            <a href="/">
+                                <img src="img/conversor.jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <span>Conversor de moedas</span>
+                        <p>Esse projeto, simula um conversor de moedas</p>
+    
+                        <div class="cta-project">
+                            <a href="/">
+                                Código
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="/">
+                                Site
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
                     </div>
+    
+                    <div class="swiper-slide card-project">
+                        <div class="img-project">
+                            <a href="/">
+                                <img src="img/conversor.jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <span>Conversor de moedas</span>
+                        <p>Esse projeto, simula um conversor de moedas</p>
+    
+                        <div class="cta-project">
+                            <a href="/">
+                                Código
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="/">
+                                Site
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide card-project">
+                        <div class="img-project">
+                            <a href="/">
+                                <img src="img/conversor.jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <span>Conversor de moedas</span>
+                        <p>Esse projeto, simula um conversor de moedas</p>
+    
+                        <div class="cta-project">
+                            <a href="/">
+                                Código
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="/">
+                                Site
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide card-project">
+                        <div class="img-project">
+                            <a href="/">
+                                <img src="img/conversor.jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <span>Conversor de moedas</span>
+                        <p>Esse projeto, simula um conversor de moedas</p>
+    
+                        <div class="cta-project">
+                            <a href="/">
+                                Código
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="/">
+                                Site
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+    
                 </div>
+    
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
-
-            <div class="card-project">
-                <div class="content-project">
-                    <div class="img-project">
-                        <a href="/">
-                            <img src="img/conversor.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <span>Conversor de moedas</span>
-                    <p>Esse projeto, simula um conversor de moedas</p>
-
-                    <div class="cta-project">
-                        <a href="/">
-                            Código
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="/">
-                            Site
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-project">
-                <div class="content-project">
-                    <div class="img-project">
-                        <a href="/">
-                            <img src="img/conversor.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <span>Conversor de moedas</span>
-                    <p>Esse projeto, simula um conversor de moedas</p>
-
-                    <div class="cta-project">
-                        <a href="/">
-                            Código
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="/">
-                            Site
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-project">
-                <div class="content-project">
-                    <div class="img-project">
-                        <a href="/">
-                            <img src="img/conversor.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <span>Conversor de moedas</span>
-                    <p>Esse projeto, simula um conversor de moedas</p>
-
-                    <div class="cta-project">
-                        <a href="/">
-                            Código
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="/">
-                            Site
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-project">
-                <div class="content-project">
-                    <div class="img-project">
-                        <a href="/">
-                            <img src="img/conversor.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <span>Conversor de moedas</span>
-                    <p>Esse projeto, simula um conversor de moedas</p>
-
-                    <div class="cta-project">
-                        <a href="/">
-                            Código
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="/">
-                            Site
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-project">
-                <div class="content-project">
-                    <div class="img-project">
-                        <a href="/">
-                            <img src="img/conversor.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <span>Conversor de moedas</span>
-                    <p>Esse projeto, simula um conversor de moedas</p>
-
-                    <div class="cta-project">
-                        <a href="/">
-                            Código
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="/">
-                            Site
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
         </div>
 
     </section>
@@ -344,6 +307,16 @@
 
     </section>
 
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container-footer">
+            <h3>Criado com carinho por</h3>
+            <h4>Vitor Soares &copy; 2025</h4>
+        </div>
+    </footer>
+
+    <!-- script files -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

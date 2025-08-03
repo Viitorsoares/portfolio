@@ -1,3 +1,16 @@
+let swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  nagation: {
+    nextEl: "swiper-button-next",
+    prevEL: ".swiper-button-prev"
+  }
+});
+
 const header = document.getElementById('header');
 
 if (header instanceof HTMLElement) {

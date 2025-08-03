@@ -36,7 +36,7 @@ body {
 
 .header-title h1 {
     color: var(--color-white);
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     transition: opacity .3s ease;
 }
 
@@ -55,11 +55,13 @@ nav ul {
     justify-content: space-around;
 }
 
-nav ul li {
+nav ul li a {
     color: var(--color-white);
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: bold;
+    
 }
+/* End header*/
 
 #person {
     height: 100vh;
@@ -144,7 +146,7 @@ nav ul li {
     flex-direction: row;
 }
 
-.stacks ul li {
+.stacks li {
     display: flex;
     align-items: center;
     position: relative;
@@ -152,25 +154,15 @@ nav ul li {
     padding: 10px;
 }
 
-.stacks ul li img {
+.stacks img {
     width: 50px;
     height: auto;
     transition: transform .3s ease;
 }
 
-.stacks ul li img:hover {
+.stacks img:hover {
     transform: scale(1.2);
     cursor: pointer;
-}
-
-.stacks-effect:hover::after {
-    content: attr(data);
-    position: absolute;
-    top: 50px;
-    left: 10px;
-    width: 20px;
-    height: 20px;
-    color: var(--color-white);
 }
 
 .person-background {
@@ -185,6 +177,7 @@ nav ul li {
     background-image: url(img/img1.jpg);
     background-size: cover;
     background-position: top center;
+    filter: brightness(.8);
 }
 
 .person-background::after {
@@ -195,7 +188,7 @@ nav ul li {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: linear-gradient(270deg, transparent 30%, var(--color-black));
+    background: linear-gradient(270deg, transparent 15%, var(--color-black));
 
 }
 
@@ -213,7 +206,7 @@ nav ul li {
     background: 
         radial-gradient(rgba(0,0,0,0.15) 60%, transparent 0),
         radial-gradient(#000 68%, transparent 0),
-        linear-gradient(to top right, #ffa500 0%, #ff1493 100%)
+        linear-gradient(to top right, #ffa500 0%, #ff1493 100%);
 }
 
 .links a img {
@@ -361,7 +354,7 @@ nav ul li {
     color: var(--color-white);
 }
 
-.wrapper-projects {
+/* .wrapper-projects {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -369,11 +362,36 @@ nav ul li {
     color: var(--color-white);
     flex-wrap: wrap;
     gap: 25px;
+} */
+
+.container-projects {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: var(--color-white);
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.swiper-wrapper {
+    width: 100%;
 }
 
 .card-project {
-    width: 300px;
-    height: 450px;
+    /* width: 300px;
+    height: 450px; */
+
     padding: 20px;
     position: relative;
     background: var(--color-white);
@@ -381,6 +399,7 @@ nav ul li {
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
+    z-index: 1;
 }
 
 .card-project::after {
@@ -392,19 +411,22 @@ nav ul li {
     width: 100%;
     background: var(--color-purple);
     border-radius: 20px 20px 0px 0px;
+    z-index: -1;
 }
 
-.content-project {
+/* .content-project {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     z-index: 1;
-}
+} */
 
 .img-project {
-    height: 240px;
-    width: 250px;
+    min-height: 240px;
+    max-width: 250px;
+    height: 100%;
+    width: 100%;
     position: relative;
     overflow: hidden;
     border-radius: 30px;
@@ -429,14 +451,14 @@ nav ul li {
     transform: scale(1.1);
 }
 
-.content-project span {
+.card-project span {
     color: var(--color-black);
     font-weight: bold;
     font-size: 1.2rem;
     margin: .75rem auto .5rem auto;
 }
 
-.content-project p {
+.card-project p {
     color: var(--color-blue);
     font-weight: bold;
     font-size: 0.8rem;
@@ -535,6 +557,25 @@ nav ul li {
     color: var(--color-blue);
 }
 /* End contact */
+
+#footer {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    background: #191919;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-white);
+}
+/* End footer */
 
 @keyframes written_text {
     100% {
