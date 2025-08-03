@@ -28,10 +28,11 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 15px 30px;
+    padding: 10px 30px;
     position: fixed;
     z-index: 2;
     background: transparent;
+    transition: all .3s ease-out;
 }
 
 .header-title h1 {
@@ -318,7 +319,7 @@ nav ul li a {
     margin: 1rem;
 }
 
-.btn-cta button {
+.btn-cta a {
     display: inline-block;
     width: 100%;
     max-width: 172px;
@@ -326,13 +327,16 @@ nav ul li a {
     margin-bottom: 3rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    text-align: center;
     letter-spacing: .15rem;
     border-radius: 10px;
+    color: var(--color-black);
+    background: var(--color-white);
     cursor: pointer;
     border: none;
 }
 
-.btn-cta button:hover {
+.btn-cta a:hover {
     transition: all .3s ease;
     filter: brightness(.8);
 }
@@ -366,7 +370,7 @@ nav ul li a {
 
 .container-projects {
     height: 100%;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -374,14 +378,13 @@ nav ul li a {
 
 .swiper {
     height: 100%;
-    width: 100%;
+    width: 80%;
+    max-width: 1020px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     color: var(--color-white);
-    flex-wrap: wrap;
-    gap: 25px;
 }
 
 .swiper-wrapper {
@@ -390,7 +393,7 @@ nav ul li a {
 
 .card-project {
     /* width: 300px;
-    height: 450px; */
+    height: 450px;  */
 
     padding: 20px;
     position: relative;
@@ -423,8 +426,8 @@ nav ul li a {
 } */
 
 .img-project {
-    min-height: 240px;
-    max-width: 250px;
+    min-height: 210px;
+    max-width: 240px;
     height: 100%;
     width: 100%;
     position: relative;
@@ -464,6 +467,7 @@ nav ul li a {
     font-size: 0.8rem;
     margin: .1rem 0rem;
     text-align: justify;
+    padding-bottom: 4rem;
 }
 
 .cta-project {
@@ -491,14 +495,14 @@ nav ul li a {
 #contacts {
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 55vh;
     width: 100vw;
     background-color: var(--color-black);
     align-items: center;
 }
 
 .contact-icon-content h2 {
-    margin: 5rem 3rem 0rem 3rem;
+    margin: 50px auto 15px auto;
     padding: 1rem;
     font-size: 1.7rem;
     color: var(--color-white);
@@ -560,7 +564,7 @@ nav ul li a {
 
 #footer {
     height: 15vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;

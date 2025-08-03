@@ -5,9 +5,9 @@ let swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  nagation: {
-    nextEl: "swiper-button-next",
-    prevEL: ".swiper-button-prev"
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
   }
 });
 
