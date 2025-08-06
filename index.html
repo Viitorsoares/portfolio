@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- external sources -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- css files and libs -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfólio - VS Dev</title>
 </head>
+
 <body>
     <!-- Header -->
-    <header id="header">
-        <a href="#person" class="header-title">
-            <h1>VS.dev</h1>
+    <section id="header">
+        <a class="header-title" href="/">
+            <h1>
+                VS.dev
+            </h1>
         </a>
 
         <nav class="navbar">
             <button class="menu-hamburguer"></button>
-            
+
             <ul class="navbar-links">
                 <li><a href="#person">Home</a></li>
                 <li><a href="#about">Sobre</a></li>
@@ -34,7 +37,8 @@
                 <li><a href="#contacts">Contatos</a></li>
             </ul>
         </nav>
-    </header>
+
+    </section>
 
     <!-- Person -->
     <section id="person">
@@ -46,53 +50,77 @@
             </div>
 
             <div class="stacks-content">
-                <h3>Tecnologia: </h3>
+                <h3>Tecnologias:</h3>
 
-                <div class="stacks">
-                    <ul>
-                        <li>
+
+                <ul class="stacks">
+                    <li>
+                        <div data="HTML">
                             <img src="svg/icons8-html-5 (1).svg" alt="html-icon">
-                        </li>
-                        <li>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div data="CSS">
                             <img src="svg/icons8-css3 (1).svg" alt="css-icon">
-                        </li>
-                        <li>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div data="JS">
                             <img src="svg/icons8-javascript (1).svg" alt="js-icon">
-                        </li>
-                        <li>
-                            <img src="svg/icons8-react (1).svg" alt="react-icon">                          
-                        </li>
-                        <li>
-                            <img src="svg/icons8-node-js.svg" alt="node-icon">
-                        </li>
-                        <li>                         
+                        </div>
+                    </li>
+
+                    <li>
+                        <div data="REACT">
+                            <img src="svg/icons8-react (1).svg" alt="react-icon">
+                        </div>
+                    </li>
+
+                    <li>
+                        <div data="NODE">
                             <img src="svg/icons8-bootstrap.svg" alt="bootstrap-icon">
-                        </li>
-                        <li>      
+                        </div>
+                    </li>
+
+                    <li>
+                        <div data="NODE">
                             <img src="svg/icons8-sass.svg" alt="sass-icon">
-                        </li>
-                        <li> 
+                        </div>
+                    </li>
+
+                    <li>
+                        <div data="NODE">
                             <img src="svg/icons8-git.svg" alt="git-icon">
-                        </li>
-                    </ul>
-                </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div data="NODE">
+                            <img src="svg/icons8-node-js.svg" alt="node-icon">
+                        </div>
+                    </li>
+                </ul>
+
+
             </div>
         </div>
 
         <div class="person-background">
             <div class="wrapper-profile-photo">
-                <img src="img/imagem-perfil.jpg" alt="foto-perfil">
+                <img class="profile-photo" src="img/imagem-perfil.jpg" alt="foto-Vitor">
             </div>
 
             <div class="links">
                 <a href="https://github.com/Viitorsoares" target="_blank">
-                    <img src="svg/logo-github.svg" alt="icon-github">
+                    <img src="./svg/logo-github.svg" alt="icon-github">
                 </a>
                 <a href="https://www.instagram.com/vitorg_soares/" target="_blank">
-                    <img src="svg/logo-insta.svg" alt="icon-insta">
+                    <img src="./svg/logo-insta.svg" alt="icon-insta">
                 </a>
                 <a href="https://www.linkedin.com/in/viitorsoares/" target="_blank">
-                    <img src="svg/logo-linkedin.svg" alt="icon-linkedin">
+                    <img src="./svg/logo-linkedin.svg" alt="icon-linkin">
                 </a>
             </div>
         </div>
@@ -102,7 +130,7 @@
     <section id="about">
         <div class="background-about">
             <div class="img-wrapper">
-                <img src="img/img.2.jpg" alt="imagem de notebook">
+                <img src="./img/img.2.jpg" alt="img2-notebook">
             </div>
         </div>
 
@@ -110,36 +138,38 @@
             <div class="section-subtitle">
                 <h2>
                     <p>💻</p>
-                    <p><span>Desenvolvedor</span> Front End</p>
+                    <p><span>Desenvolvedor</span> Front end</p>
                 </h2>
             </div>
 
             <h3>
-                Sou um Desenvolvedor Front End com experiências em
-                <p>HTML, CSS, JavaScript, React.Js, Node.Js, Bootstrap e SASS</p>
+                Sou um Desenvolvedor Front end com experiências em
+                <p>HTML, CSS, JavaScript, React.Js, Node.Js, Bootstrap, Sass e Git</p>
             </h3>
 
             <h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, dolores? Aperiam consequatur officiis odit culpa. Cum veniam maxime iusto, illum, sunt sed obcaecati expedita minima veritatis accusantium odio impedit et Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt praesentium, dolores unde hic accusantium pariatur necessitatibus nihil ipsam placeat natus? Veniam, velit harum quos maxime iste tempore necessitatibus ad ex?<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis, perferendis animi rerum voluptatibus delectus odio adipisci aut autem, nulla laboriosam vel tempora asperiores obcaecati consequatur veritatis dolorum fugit doloribus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia sed deserunt tenetur quisquam ea nemo consequatur quis, illo distinctio sint, deleniti tempora qui sapiente laudantium cumque mollitia aliquam libero. Perferendis!
+                Meu nome é Ivo Junior, tenho 27 anos. Além da minha experiência em grandes empresas como Raia Drogasil,
+                Bradesco
+                - em seu banco digital Next - também atuo como Freelancer. Atualmente estou aberto para oportunidades
+                como
+                Engenheiro de Software Frontend Sênior.
             </h4>
 
             <h4>
                 Abaixo está o meu <p>currículo</p> para download.
             </h4>
 
-            <div class="btn-cta">
-                <a href="public/document/certificado_css-onebitcode.pdf" download="CV-Vitor-Soares-Dev" aria-label="Baixar Curriculo Vitor Soares">
-                    currículo
+            <div class="button-cta">
+                <a href="public/document/curriculo-ivoJr.pdf" download="CV-Vitor-Soares"
+                    aria-label="Baixar curriculo Vitor Soares">
+                    Currículo
                 </a>
             </div>
-
         </div>
     </section>
 
     <!-- Projects -->
     <section id="projects">
-
         <div class="projects-title">
             <h2>PROJETOS 🧩</h2>
         </div>
@@ -147,107 +177,21 @@
         <div class="container-projects">
             <div class="swiper mySwiper">
                 <!-- wrapper-projects -->
+
                 <div class="swiper-wrapper">
-    
+
                     <!-- content-project -->
                     <div class="swiper-slide card-project">
-                        <div class="img-project">
+                        <div class="image-project">
                             <a href="/">
-                                <img src="img/spotify.jpg" alt="imagem spotify">
+                                <img src="img/spotify.jpg" alt="img-conversor">
                             </a>
                         </div>
-    
-                        <span>Streaming Spotify</span>
+
+                        <span>Conversor de moedas</span>
+
                         <p>Esse projeto, simula um conversor de moedas</p>
-    
-                        <div class="cta-project">
-                            <a href="/">
-                                Código
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="/">
-                                Site
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-    
-                    <div class="swiper-slide card-project">
-                        <div class="img-project">
-                            <a href="/">
-                                <img src="img/jogos.jpeg" alt="biblioteca de jogos">
-                            </a>
-                        </div>
-    
-                        <span>Biblioteca de Jogos</span>
-                        <p>Esse projeto, simula um conversor de moedas</p>
-    
-                        <div class="cta-project">
-                            <a href="/">
-                                Código
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="/">
-                                Site
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-    
-                    <div class="swiper-slide card-project">
-                        <div class="img-project">
-                            <a href="/">
-                                <img src="img/apple-products.jpg" alt="site apple">
-                            </a>
-                        </div>
-    
-                        <span>Site Apple</span>
-                        <p>Esse projeto, simula um conversor de moedas</p>
-    
-                        <div class="cta-project">
-                            <a href="/">
-                                Código
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="/">
-                                Site
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-    
-                    <div class="swiper-slide card-project">
-                        <div class="img-project">
-                            <a href="/">
-                                <img src="img/calculator.jpg" alt="imagem calculadora">
-                            </a>
-                        </div>
-    
-                        <span>Calculadora</span>
-                        <p>Esse projeto, simula um conversor de moedas</p>
-    
-                        <div class="cta-project">
-                            <a href="/">
-                                Código
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="/">
-                                Site
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-    
-                    <div class="swiper-slide card-project">
-                        <div class="img-project">
-                            <a href="/">
-                                <img src="img/jogo-velha.jpeg" alt="Imagem jogo da velha">
-                            </a>
-                        </div>
-    
-                        <span>Jogo da Velha</span>
-                        <p>Esse projeto, simula um conversor de moedas</p>
-    
+
                         <div class="cta-project">
                             <a href="/">
                                 Código
@@ -260,16 +204,17 @@
                         </div>
                     </div>
 
-                     <div class="swiper-slide card-project">
-                        <div class="img-project">
+                    <div class="swiper-slide card-project">
+                        <div class="image-project">
                             <a href="/">
-                                <img src="img/login.png" alt="Imagem de tela de login">
+                                <img src="img/jogos.jpeg" alt="img-conversor">
                             </a>
                         </div>
-    
-                        <span>Tela de Login</span>
+
+                        <span>Conversor de moedas</span>
+
                         <p>Esse projeto, simula um conversor de moedas</p>
-    
+
                         <div class="cta-project">
                             <a href="/">
                                 Código
@@ -282,16 +227,17 @@
                         </div>
                     </div>
 
-                     <div class="swiper-slide card-project">
-                        <div class="img-project">
+                    <div class="swiper-slide card-project">
+                        <div class="image-project">
                             <a href="/">
-                                <img src="img/refrigerante.png" alt="Site refrigerante">
+                                <img src="img/apple-products.jpg" alt="img-conversor">
                             </a>
                         </div>
-    
-                        <span>Site de Refrigerante</span>
+
+                        <span>Conversor de moedas</span>
+
                         <p>Esse projeto, simula um conversor de moedas</p>
-    
+
                         <div class="cta-project">
                             <a href="/">
                                 Código
@@ -303,28 +249,122 @@
                             </a>
                         </div>
                     </div>
-    
+
+                    <div class="swiper-slide card-project">
+                        <div class="image-project">
+                            <a href="/">
+                                <img src="img/calculator.jpg" alt="img-conversor">
+                            </a>
+                        </div>
+
+                        <span>Conversor de moedas</span>
+
+                        <p>Esse projeto, simula um conversor de moedas</p>
+
+                        <div class="cta-project">
+                            <a href="/">
+                                Código
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="/">
+                                Site
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card-project">
+                        <div class="image-project">
+                            <a href="/">
+                                <img src="img/jogo-velha.jpeg" alt="img-conversor">
+                            </a>
+                        </div>
+
+                        <span>Conversor de moedas</span>
+
+                        <p>Esse projeto, simula um conversor de moedas</p>
+
+                        <div class="cta-project">
+                            <a href="/">
+                                Código
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="/">
+                                Site
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card-project">
+                        <div class="image-project">
+                            <a href="/">
+                                <img src="img/login.png" alt="img-conversor">
+                            </a>
+                        </div>
+
+                        <span>Conversor de moedas</span>
+
+                        <p>Esse projeto, simula um conversor de moedas</p>
+
+                        <div class="cta-project">
+                            <a href="/">
+                                Código
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="/">
+                                Site
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card-project">
+                        <div class="image-project">
+                            <a href="/">
+                                <img src="img/refrigerante.png" alt="img-conversor">
+                            </a>
+                        </div>
+
+                        <span>Conversor de moedas</span>
+
+                        <p>Esse projeto, simula um conversor de moedas</p>
+
+                        <div class="cta-project">
+                            <a href="/">
+                                Código
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="/">
+                                Site
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
-    
+
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
+
             </div>
         </div>
-
     </section>
 
     <!-- Contacts -->
     <section id="contacts">
         <div class="contact-icon-content">
-            <h2>CONTATO 📞</h2>
+            <h2>Contato 📞</h2>
         </div>
 
         <div class="contact-icons-wrapper">
+
             <div class="contact-icon-content">
                 <div class="contact-icon">
-                    <i class="fa-solid fa-map-location"></i>
+                    <i class="fa-solid fa-map-location-dot"></i>
                 </div>
+
                 <div class="contact-info">
                     <span>Localização</span>
                     <p>Adamantina - SP</p>
@@ -333,39 +373,33 @@
 
             <div class="contact-icon-content">
                 <div class="contact-icon">
-                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-envelope-open-text"></i>
                 </div>
+
                 <div class="contact-info">
                     <span>E-mail</span>
-                    <a href="/">vitorgabriel@gmail.com</a>
+                    <a href="mailto:maciel.jr95@gmail.com">
+                        maciel.jr95@gmail.com
+                    </a>
                 </div>
             </div>
-
-            <div class="contact-icon-content">
-                <div class="contact-icon">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
-                <div class="contact-info">
-                    <span>Whatsapp</span>
-                    <a href="/">55 (18) 99660-8363</a>
-                </div>
-            </div>
-            
 
         </div>
-
     </section>
 
     <!-- Footer -->
-    <footer id="footer">
+    <section id="footer">
         <div class="container-footer">
-            <h3>Criado com carinho por</h3>
-            <h4>Vitor Soares &copy; 2025</h4>
+            <h2>Feito com carinho por</h2>
+            <h3>Vitor Soares © 2025</h3>
         </div>
-    </footer>
+    </section>
 
     <!-- script files -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
