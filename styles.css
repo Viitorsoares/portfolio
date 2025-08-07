@@ -276,7 +276,7 @@ body {
 
 .stacks-content h3 {
   color: var(--color-white);
-  font-size: calc(.85vw + .5rem);
+  font-size: calc(.85vw + 1rem);
 
   margin-left: 20px;
 }
@@ -422,9 +422,8 @@ body {
   z-index: -1;
 
   background:
-    linear-gradient(90deg, transparent 30%, var(--color-black)),
-    linear-gradient(180deg, transparent 30%, var(--color-black)),
-    linear-gradient(0deg, transparent 65%, var(--color-black));
+    
+    linear-gradient(1turn, transparent 65%, var(--color-black));
 }
 
 .wrapper-profile-photo {
@@ -688,6 +687,7 @@ body {
   margin-top: 60px;
   padding: 1rem;
 
+  text-align: center;
   font-size: 3rem;
   color: var(--color-white);
 }
@@ -916,13 +916,11 @@ body {
 #contacts {
   display: flex;
   flex-direction: column;
-
   width: 100%;
-
   margin: 3vw 0vw 5vw;
-
+  align-items: center;
+  justify-content: center;
   background: var(--color-black);
-
   color: var(--color-white)
 }
 
