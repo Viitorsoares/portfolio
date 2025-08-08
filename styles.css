@@ -422,7 +422,6 @@ body {
   z-index: -1;
 
   background:
-    
     linear-gradient(1turn, transparent 65%, var(--color-black));
 }
 
@@ -945,7 +944,7 @@ body {
   align-items: center;
 
   margin: 0rem 3rem;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 7rem;
 }
 
 .contact-icon {
