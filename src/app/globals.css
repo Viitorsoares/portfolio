@@ -7,7 +7,9 @@
 @theme {
   --color-*: initial;
   --color-background: #0B0E17;
-
+  --color-main-text: #c9d1d9;
+  --color-secondary-text: #8b949e;
+  --color-main-green: #40c463;
 }
 
 @theme inline {
