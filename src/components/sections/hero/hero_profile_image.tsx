@@ -4,7 +4,7 @@ import { Circle } from 'lucide-react';
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-interface ProfileCardProps {
+interface ProfileImageProps {
     name: string
     role: string
     yearsExp: number
@@ -13,14 +13,14 @@ interface ProfileCardProps {
     className?: string
 }
 
-export default function HeroProfileCard({
+export default function HeroProfileImage({
     name,
     role,
     yearsExp,
     imageUrl,
     openToWork = true,
     className
-}: ProfileCardProps) {
+}: ProfileImageProps) {
     return (
         <Card className={cn("relative w-[230px] h-[280px] rounded-2x1 p-0 shadow-2xl ", className)}>
             <Card className="absolute -left-5 -top-3 z-20 border bg-background px-3 py-1 text-main-text shadow-lg backdrop-blur-sm">{yearsExp} anos exp</Card>
