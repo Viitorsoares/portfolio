@@ -13,7 +13,7 @@ interface ProfileCardProps {
     className?: string
 }
 
-export default function ProfileCard({
+export default function HeroProfileCard({
     name,
     role,
     yearsExp,

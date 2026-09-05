@@ -1,4 +1,5 @@
-import ProfileCard from "@/components/sections/about/profileCard";
+import ProfileCard from "@/components/sections/hero/hero_profile_Card";
+import HeroProfileDescription from "@/components/sections/hero/hero_profile_description";
 
 export default function Home() {
   return (
@@ -11,6 +12,9 @@ export default function Home() {
           imageUrl="/images/profile.jpg"
           openToWork
         />
+
+        <HeroProfileDescription />
+
       </main>
     </div>
   );
