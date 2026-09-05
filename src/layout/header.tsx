@@ -6,7 +6,7 @@ export default function Header() {
             <nav className='flex justify-between px-5 mt-4 mb-30'>
                 <div className='flex gap-2 text-xl'>
                     <Code className='text-main-green w-6 h-6' />
-                    <h1 className='text-main-text'>Vitor</h1>
+                    <h1 className='text-main-text'>Vitor S.</h1>
                 </div>
 
                 <div>
