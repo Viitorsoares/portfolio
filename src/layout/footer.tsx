@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="p-5 text-left text-sm">
+        <footer className="p-5 text-left text-sm font-mono">
             <div className="text-secondary-text">
                 <div className="flex flex-row gap-4">
                     &copy;
@@ -9,7 +9,7 @@ export default function Footer() {
                 </div>
 
                 <div>
-                    <p className="flex flex-row gap-1.5">
+                    <p className="flex flex-row flex-wrap  gap-1.5">
                         Construido com
                         <span>Next.js</span>
                         <span>TypeScript</span>
