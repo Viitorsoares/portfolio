@@ -3,7 +3,7 @@ import HeroProfileDescription from "@/components/sections/hero/hero_profile_desc
 
 export default function HeroProfile() {
     return (
-        <div className="w-full flex flex-col items-center gap-8">
+        <div className="w-full flex flex-col items-center gap-12">
             <div>
                 <HeroProfileImage
                     name={"Vitor Soares"}

@@ -9,14 +9,19 @@
   --color-background: #0B0E17;
   --color-main-text: #c9d1d9;
   --color-white: #f5f5f5;
+  --color-black: #000000;
   --color-secondary-text: #8b949e;
   --color-main-green: #40c463;
   --color-button-green: #238636;
+  --color-backgound-green: #9be9a8;
   --color-cards: #161B22;
+
+
+  --text-22: 22px;
 }
 
 @theme inline {
-  
+  --text-2xl-custom: 22px;
   --color-foreground: var(--foreground);
   --font-sans: var(--font-rubik);
   --font-mono: var(--font-jetbrains-mono);
