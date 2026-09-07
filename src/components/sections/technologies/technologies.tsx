@@ -1,4 +1,4 @@
-import CategoryProps from "./category_props";
+import CategoryProps from "./category_technologies";
 
 export default function Technologies() {
     return (
