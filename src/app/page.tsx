@@ -1,5 +1,6 @@
 import AboutProfile from "@/components/sections/about/about_profile";
 import HeroProfile from "@/components/sections/hero/hero_profile";
+import Project from "@/components/sections/projects/project";
 import StackTechnologies from "@/components/sections/technologies/stack_technologies";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroProfile />
       <AboutProfile />
       <StackTechnologies />
+      <Project />
     </main>
   );
 }
