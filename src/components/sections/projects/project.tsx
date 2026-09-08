@@ -13,7 +13,7 @@ const projects: project[] = [
         imageUrl: "/images/dashbord.jpg",
         name: "Beacon — Uptime Monitor",
         description: "Distributed uptime monitoring with multi-region checks, incident timelines, and Slack/PagerDuty alerting. Handles 40M+ pings per day.",
-        tech: ["React.js", "JavaScript", "CSS", "Bootstrap", "Node.js", "Express", "MySQL"]
+        tech: ["React", "JavaScript", "CSS", "Bootstrap", "Node.js", "Express", "MySQL"]
     },
 ]
 
@@ -26,8 +26,8 @@ export default function Project() {
             </div>
 
             <div className="grid grid-cols-1">
-                {projects.map((tech) => (
-                    <CardImageProject key={tech.name} {...tech} />
+                {projects.map((project, index) => (
+                    <CardImageProject key={index} {...project} />
                 ))}
             </div>
         </section>

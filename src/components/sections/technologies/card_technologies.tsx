@@ -7,7 +7,7 @@ interface CardTechnologiesProps {
 }
 
 export default function CardTechnologies({
-    iconUrl, 
+    iconUrl,
     name, 
     category
 }: CardTechnologiesProps) {

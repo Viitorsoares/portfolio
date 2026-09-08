@@ -35,10 +35,10 @@ export default function HeroProfileImage({
             <div className="">
                 <Image
                     src={imageUrl}
-                    alt={name} 
+                    alt={name}
                     fill
                     className="h-full w-full object-cover"
-                />       
+                />
             </div>
 
             <div>
