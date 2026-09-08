@@ -1,4 +1,4 @@
-import ButtonHero from "./components/button_hero";
+import ButtonHero from "../components/button_hero";
 import { Download } from 'lucide-react';
 
 export default function HeroProfileDescription() {

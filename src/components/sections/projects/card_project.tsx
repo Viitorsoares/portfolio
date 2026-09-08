@@ -32,7 +32,7 @@ export function CardImageProject({
             <CardHeader className="flex flex-col gap-3">
                 <CardTitle className="text-white">{name}</CardTitle>
                 <CardDescription className="text-main-text font-light">{description}</CardDescription>
-                <div className="flex flex-row flex-wrap gap-4 mt-1">
+                <div className="flex flex-row flex-wrap gap-4 mt-2">
                     {tech.map((t) => (
                         <div key={t}>
                             {techIconMap[t] && (
