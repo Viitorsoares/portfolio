@@ -7,7 +7,13 @@ const projects: project[] = [
         imageUrl: "/images/dashbord.jpg",
         name: "Beacon — Uptime Monitor",
         description: "Distributed uptime monitoring with multi-region checks, incident timelines, and Slack/PagerDuty alerting. Handles 40M+ pings per day.",
-        tech: []
+        tech: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL",]
+    },
+    {
+        imageUrl: "/images/dashbord.jpg",
+        name: "Beacon — Uptime Monitor",
+        description: "Distributed uptime monitoring with multi-region checks, incident timelines, and Slack/PagerDuty alerting. Handles 40M+ pings per day.",
+        tech: ["React.js", "JavaScript", "CSS", "Bootstrap", "Node.js", "Express", "MySQL"]
     },
 ]
 
