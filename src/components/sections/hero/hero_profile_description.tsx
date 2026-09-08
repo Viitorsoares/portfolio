@@ -4,9 +4,6 @@ import { Download } from 'lucide-react';
 export default function HeroProfileDescription() {
     return (
         <div className="flex flex-col gap-5 items-start">
-            <span className="inline-flex items-center gap-2 border rounded-sm border-button-green bg-main-green/8  px-3 py-1 text-sm font-bold text-main-green">
-                Disponível para oportunidade
-            </span>
             <div className="flex flex-col gap-5 text-main-text">
                 <h2 className="text-22 font-medium">Olá, eu sou <span className="text-main-green">Vitor Soares</span></h2>
                 <h1 className="font-medium text-4xl text-white">Desenvolvedor Full-Stack</h1>
