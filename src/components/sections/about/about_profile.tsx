@@ -14,8 +14,22 @@ export default function AboutProfile() {
                 <CardHeader className="flex flex-col gap-5">
                     <h2 className="text-white text-[22px]">Um pouco sobre mim</h2>
 
-                    <CardDescription className="text-main-text">
-                        I'm a full-stack engineer with 7+ years building production systems — from fintech APIs processing millions of transactions to real-time collaboration tools used by When I'm not coding I'm contributing to open source, writing about distributed systems, or brewing specialty coffee.
+                    <CardDescription className="text-main-text flex flex-col gap-4">
+                        <span>
+                            Minha história na tecnologia é guiada por uma curiosidade 
+                            inesgotável e pelo prazer de ver um sistema funcionando do zero. 
+                            Com 3 anos dedicados a estudar e colocar a mão na massa no 
+                            desenvolvimento Full-Stack, venho construindo uma base sólida 
+                            em arquitetura web, resolução de problemas e boas práticas de código.
+                            Estou em um momento muito dinâmico da minha carreira, onde cada projeto 
+                            é uma oportunidade de absorver novos conhecimentos, aprimorar minhas habilidades 
+                            técnicas e colaborar ativamente com equipes que valorizam a inovação 
+                            e o crescimento mútuo.
+                        </span>
+                        <span>
+                            Se há um problema complexo para resolver, 
+                            estou sempre pronto para pesquisar, testar e entregar a melhor solução.
+                        </span>
                     </CardDescription>
                 </CardHeader>
 

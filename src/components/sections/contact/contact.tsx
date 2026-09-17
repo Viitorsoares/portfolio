@@ -6,10 +6,10 @@ export default function Contact() {
         <section>
             <div>
                 <span className="flex flex-row gap-2 text-main-green pb-5">04. <p>Contato</p></span>
-                <h2 className="text-[22px] text-white">Let's build something</h2>
+                <h2 className="text-[22px] text-white">Entre em contato comigo</h2>
                 <p className="text-main-text text-base my-6">
-                    Aberto a vagas full-time, freelas e projetos open source interessantes.
-                    Me manda uma mensagem — respondo em até 24 horas.
+                    Aberto a vagas full-time.
+                    Me manda uma mensagem, respondo em até 24 horas.
                 </p>
             </div>
 
