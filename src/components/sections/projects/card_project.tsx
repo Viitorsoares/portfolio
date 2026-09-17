@@ -24,7 +24,7 @@ export function CardImageProject({
     tech
 }: CardImageProjectProps) {
     return (
-        <Card className="relative mx-auto w-full max-w-sm pt-0 mt-9 bg-cards">
+        <Card className="relative mx-auto w-full max-w-sm pt-0 mt-9 bg-cards border-3 border-transparent hover:border-button-green hover:-translate-y-2 hover:shadow-xl transition-all duration-300 ease-in-out">
             <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
             <img
                 src={imageUrl}
