@@ -20,9 +20,9 @@ export default function Header() {
                 <HamburgerMenu
                     items={menuItems}
                     resumeUrl="/resume.pdf"
-                    githubUrl="https://github.com/seu-usuario"
-                    linkedinUrl="https://linkedin.com/in/seu-usuario"
-                    emailUrl="mailto:voce@email.com"
+                    githubUrl="https://github.com/Viitorsoares"
+                    linkedinUrl="https://linkedin.com/in/viitorsoares/"
+                    emailUrl="mailto:viitorgab.soares@gmail.com"
                 />
             </nav>
         </header>

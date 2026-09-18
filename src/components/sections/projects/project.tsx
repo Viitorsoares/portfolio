@@ -4,7 +4,7 @@ type project = React.ComponentProps<typeof CardImageProject>
 
 const projects: project[] = [
     {
-        imageUrl: "/images/dashbord.jpg",
+        imageUrl: "/images/vagaja.jpg",
         name: "Vagaja — Encontre Vaga sem Rodar",
         description: "Conecta motoristas e agentes de zona azul em um mapa colaborativo de vagas disponíveis, otimizando a ocupação das ruas e facilitando a gestão do estacionamento urbano.",
         tech: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL",]

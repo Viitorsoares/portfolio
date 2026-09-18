@@ -1,5 +1,6 @@
 import ButtonHero from "../components/button_hero";
 import {FaLinkedin, FaWhatsapp} from "react-icons/fa";
+import { Mail } from 'lucide-react';
 
 export default function Contact() {
     return (
@@ -15,7 +16,7 @@ export default function Contact() {
 
             <div className="flex gap-3" >
                 <ButtonHero title={"Enviar mensagem"} icon={FaWhatsapp} className="p-6 text-base font-medium bg-button-green text-main-text" />
-                <ButtonHero title={"LinkedIn"} icon={FaLinkedin} className="p-6 text-base font-medium bg-background border-button-green text-main-text" />
+                <ButtonHero title={"Enviar e-mail "} icon={Mail} className="p-6 text-base font-medium bg-button-green text-main-text" />
             </div>
         </section>
     )
