@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-        <footer className="p-5 text-left text-sm font-mono">
-            <div className="text-secondary-text">
+        <footer className="p-5 mt-20 text-left text-sm font-mono bg-cards">
+            <div className="text-secondary-text flex flex-col gap-2">
                 <div className="flex flex-row gap-4">
                     &copy;
                     <p>2026</p>

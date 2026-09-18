@@ -25,7 +25,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="pt-br"
       className={`${rubikSans.variable} ${jetBrainsMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col text-fo bg-background">
+      <body className="min-h-full flex flex-col text-fo bg-background pt-47">
         <Header />
         {children}
         <Footer />

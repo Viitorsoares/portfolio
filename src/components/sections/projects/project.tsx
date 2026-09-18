@@ -19,7 +19,7 @@ const projects: project[] = [
 
 export default function Project() {
     return (
-        <section>
+        <section id="projects">
             <div>
                 <span className="flex flex-row gap-2 text-main-green pb-5">03. <p>Projetos</p></span>
                 <h2 className="text-[22px] text-white">Soluções em destaque</h2>

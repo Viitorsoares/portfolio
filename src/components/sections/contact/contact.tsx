@@ -3,7 +3,7 @@ import {FaLinkedin, FaWhatsapp} from "react-icons/fa";
 
 export default function Contact() {
     return (
-        <section>
+        <section id="contact">
             <div>
                 <span className="flex flex-row gap-2 text-main-green pb-5">04. <p>Contato</p></span>
                 <h2 className="text-[22px] text-white">Entre em contato comigo</h2>

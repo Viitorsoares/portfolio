@@ -14,7 +14,7 @@ export default function StackTechnologies() {
             ? technologies
             : technologies.filter((tech) => tech.category === activeFilter)
     return (
-        <section>
+        <section id="stack">
             <span className="flex flex-row gap-2 text-main-green pb-5">02. <p>Habilidade técnicas</p></span>
             <h2 className="text-[22px] text-white">Tecnologias que utilizo</h2>
 

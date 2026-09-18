@@ -8,7 +8,7 @@ import { AboutProfileCard } from "./about_profile_card"
 
 export default function AboutProfile() {
     return (
-        <div>
+        <section id="about" >
             <span className="flex flex-row gap-2 text-main-green pb-6">01. <p>Sobre</p></span>
             <Card className="w-full flex flex-col gap-7 max-w-sm bg-cards">
                 <CardHeader className="flex flex-col gap-5">
@@ -49,6 +49,6 @@ export default function AboutProfile() {
                     />
                 </CardContent>
             </Card>
-        </div>
+        </section>
     )
 }
