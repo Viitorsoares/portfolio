@@ -1,4 +1,12 @@
-import { Code, Menu } from 'lucide-react';
+import { Code } from 'lucide-react';
+import HamburgerMenu from './hamburgerMenu.tsx';
+
+const menuItems = [
+    { title: "Sobre", href: "#about" },
+    { title: "Tecnologias", href: "#stack" },
+    { title: "Projetos", href: "#projects" },
+    { title: "Contatos", href: "#contact" },
+]
 
 export default function Header() {
     return (
@@ -9,12 +17,13 @@ export default function Header() {
                     <h1 className='text-main-text'>Vitor S.</h1>
                 </div>
 
-                <div>
-                    <div>
-                        
-                    </div>
-                    <Menu className='text-main-text' />
-                </div>
+                <HamburgerMenu
+                    items={menuItems}
+                    resumeUrl="/resume.pdf"
+                    githubUrl="https://github.com/seu-usuario"
+                    linkedinUrl="https://linkedin.com/in/seu-usuario"
+                    emailUrl="mailto:voce@email.com"
+                />
             </nav>
         </header>
     )

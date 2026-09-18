@@ -12,7 +12,7 @@ export default function HeroProfileDescription() {
             </div>
             <div className="flex gap-3" >
                 <ButtonHero title={"Ver projetos"} className="p-6 text-base font-medium bg-button-green text-main-text" />
-                <ButtonHero title={"Download CV"} icon={Download} className="p-6 text-base font-medium bg-background border-button-green text-main-text" />
+                <ButtonHero title={"Baixar CV"} icon={Download} className="p-6 text-base font-medium bg-background border-button-green text-main-text" />
             </div>
         </div>
 

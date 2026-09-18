@@ -16,8 +16,8 @@ export default function AboutProfile() {
 
                     <CardDescription className="text-main-text flex flex-col gap-4">
                         <span>
-                            Minha história na tecnologia é guiada por uma curiosidade 
-                            inesgotável e pelo prazer de ver um sistema funcionando do zero. 
+                            Minha história na tecnologia é guiada por muita curiosidade 
+                            e pelo prazer de ver um sistema funcionando do zero. 
                             Com 3 anos dedicados a estudar e colocar a mão na massa no 
                             desenvolvimento Full-Stack, venho construindo uma base sólida 
                             em arquitetura web, resolução de problemas e boas práticas de código.

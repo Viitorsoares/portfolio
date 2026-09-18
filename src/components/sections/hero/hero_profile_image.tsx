@@ -13,6 +13,7 @@ interface ProfileImageProps {
     className?: string
 }
 
+
 export default function HeroProfileImage({
     name,
     role,

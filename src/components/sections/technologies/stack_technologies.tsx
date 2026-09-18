@@ -7,7 +7,7 @@ import { techIconMap, technologies } from "@/data/tech-icons";
 const filters = ["Todos", "Frontend", "Backend", "DevOps", "Ferramentas"]
 
 export default function StackTechnologies() {
-    const [activeFilter, setActiveFilter] = useState("All")
+    const [activeFilter, setActiveFilter] = useState("Todos")
 
     const filtered =
         activeFilter === "Todos"
