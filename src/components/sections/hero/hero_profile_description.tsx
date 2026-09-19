@@ -12,8 +12,8 @@ export default function HeroProfileDescription() {
                 front-end e do back-end.</p>
             </div>
             <div className="flex gap-3" >
-                <ButtonHero title={"Ver projetos"} href="#projects"  className="p-6 text-base font-medium bg-button-green text-main-text" />
-                <ButtonHero title={"Baixar CV"}  icon={Download} className="p-6 text-base font-medium bg-background border-button-green text-main-text" />
+                <ButtonHero title={"Ver projetos"} href="#projects"  className="p-6 text-base font-medium bg-button-green hover:bg-button-green/80 text-main-text" />
+                <ButtonHero title={"Baixar CV"}  icon={Download} className="p-6 text-base font-medium bg-background hover:bg-background cursor-pointer border-button-green  text-main-text" />
             </div>
         </div>
 

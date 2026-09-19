@@ -23,7 +23,7 @@ export default function StackTechnologies() {
                     <Badge
                         key={filter}
                         onClick={() => setActiveFilter(filter)}
-                        className={`px-4 py-4 rounded-full border text-sm bg-background text-main-text transition-color ${activeFilter === filter
+                        className={`px-4 py-4 rounded-full border text-sm bg-background text-main-text transition-color cursor-pointer ${activeFilter === filter
                             ? "border-main-green text-main-green"
                             : "border-main-text text-main-text hover:border-gray-500"
                             } `}

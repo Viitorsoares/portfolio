@@ -9,7 +9,6 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 
-
 interface CardImageProjectProps {
     imageUrl: string
     name: string
@@ -45,8 +44,8 @@ export function CardImageProject({
                 </div>
             </CardHeader>
             <CardFooter className="px-1.5 py-2 flex flex-row items-center gap-2 bg-cards border-t border-s-secondary-text/80" >
-                <ButtonHero icon={FaGithub} title={"Código"} className="text-sm bg-cards text-main-text" />
-                <ButtonHero icon={FaExternalLinkAlt} title={"Demo"} className="text-sm bg-cards text-main-green" />
+                <ButtonHero icon={FaGithub} title={"Código"} className="text-sm bg-cards hover:bg-cards text-main-text cursor-pointer" />
+                <ButtonHero icon={FaExternalLinkAlt} title={"Demo"} className="text-sm bg-cards hover:bg-cards cursor-pointer text-main-green" />
             </CardFooter>
         </Card>
     )

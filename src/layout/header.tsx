@@ -11,10 +11,10 @@ const menuItems = [
 export default function Header() {
     return (
         <header className='fixed top-0 left-0 w-full z-50 bg-background'>
-            <nav className='flex justify-between px-5 py-5'>
-                <div className='flex gap-2 text-xl'>
+            <nav className='flex justify-between px-5 py-5 items-center'>
+                <div className='flex gap-2 text-xl items-center'>
                     <Code className='text-main-green w-6 h-6' />
-                    <h1 className='text-main-text'>Vitor S.</h1>
+                    <h1 className='text-main-text'>vitors.dev</h1>
                 </div>
 
                 <HamburgerMenu

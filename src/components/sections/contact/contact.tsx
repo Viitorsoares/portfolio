@@ -1,8 +1,18 @@
 import ButtonHero from "../components/button_hero";
-import {FaLinkedin, FaWhatsapp} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { Mail } from 'lucide-react';
 
-export default function Contact() {
+type contactIcons = {
+    githubUrl?: string
+    linkedinUrl?: string
+    emailUrl?: string
+}
+
+export default function Contact({
+    githubUrl = "#",
+    linkedinUrl = "#",
+    emailUrl = "#"
+}:contactIcons) {
     return (
         <section id="contact">
             <div>
@@ -15,8 +25,17 @@ export default function Contact() {
             </div>
 
             <div className="flex gap-3" >
-                <ButtonHero title={"Enviar mensagem"} icon={FaWhatsapp} className="p-6 text-base font-medium bg-button-green text-main-text" />
-                <ButtonHero title={"Enviar e-mail "} icon={Mail} className="p-6 text-base font-medium bg-button-green text-main-text" />
+                <ButtonHero title={"Enviar mensagem"} icon={FaWhatsapp} className="p-6 text-base font-medium bg-button-green text-main-text cursor-pointer hover:bg-button-green/80" />
+                <ButtonHero title={"Enviar e-mail "} icon={Mail} className="p-6 text-base font-medium bg-button-green text-main-text cursor-pointer hover:bg-button-green/80" />
+            </div>
+
+            <div className="flex flex-row gap-4 pt-7 text-main-text hover:text-main-green/80 ">
+                <a href={githubUrl} target='_blank' rel='noopener noreferrer'>
+                    <FaGithub className='text-main-text w-10 h-10 hover:text-main-green transition-colors' />
+                </a>
+                <a href={linkedinUrl} target='_blank' rel='noopener noreferrer'>
+                    <FaLinkedin className='text-main-text w-10 h-10 hover:text-main-green transition-colors' />
+                </a>
             </div>
         </section>
     )

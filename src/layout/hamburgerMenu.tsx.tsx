@@ -48,7 +48,7 @@ export default function HamburgerMenu({
                     <div className='flex items-center justify-between px-5 pt-5 pb-6 border-b border-main-text/20'>
                         <div className='flex items-center gap-1 text-main-green'>
                             <Code className='w-5 h-5' />
-                            <span className='font-rubik text-sm'>Vitor s.</span>
+                            <span className='font-rubik text-sm'>vitors.dev</span>
                         </div>
                         <X
                             onClick={() => setIsOpen(false)}
