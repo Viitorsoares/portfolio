@@ -1,6 +1,6 @@
 import { techIconMap } from "@/data/tech-icons"
 import ButtonHero from "../components/button_hero"
-import {FaExternalLinkAlt, FaGithub} from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import {
     Card,
     CardDescription,
@@ -8,19 +8,24 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+import Link from "next/link";
 
 interface CardImageProjectProps {
     imageUrl: string
     name: string
     description: string
     tech: string[]
+    githubUrl: string
+    demoUrl: string
 }
 
 export function CardImageProject({
     imageUrl,
     name,
     description,
-    tech
+    tech,
+    githubUrl,
+    demoUrl
 }: CardImageProjectProps) {
     return (
         <Card className="relative mx-auto w-full max-w-sm pt-0 mt-9 bg-cards border-3 border-transparent hover:border-button-green hover:-translate-y-2 hover:shadow-xl transition-all duration-300 ease-in-out">
@@ -44,8 +49,12 @@ export function CardImageProject({
                 </div>
             </CardHeader>
             <CardFooter className="px-1.5 py-2 flex flex-row items-center gap-2 bg-cards border-t border-s-secondary-text/80" >
-                <ButtonHero icon={FaGithub} title={"Código"} className="text-sm bg-cards hover:bg-cards text-main-text cursor-pointer" />
-                <ButtonHero icon={FaExternalLinkAlt} title={"Demo"} className="text-sm bg-cards hover:bg-cards cursor-pointer text-main-green" />
+                <Link href={githubUrl} target="_blank" rel="noopener noreferrer">
+                    <ButtonHero icon={FaGithub} title={"Código"} className="text-sm bg-cards hover:bg-cards text-main-text cursor-pointer" />
+                </Link>
+                <Link href={demoUrl} target="_blank" rel="noopener noreferrer">
+                    <ButtonHero icon={FaExternalLinkAlt} title={"Demo"} className="text-sm bg-cards hover:bg-cards cursor-pointer text-main-green" />
+                </Link>
             </CardFooter>
         </Card>
     )
