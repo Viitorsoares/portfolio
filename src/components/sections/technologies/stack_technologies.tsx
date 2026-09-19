@@ -1,20 +1,33 @@
 "use client"
+
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react"
 import CardTechnologies from "./card_technologies";
 import { techIconMap, technologies } from "@/data/tech-icons";
+import { cn } from "@/lib/utils";
+import { useInView } from "@/hooks/use_in_view";
 
 const filters = ["Todos", "Frontend", "Backend", "DevOps", "Ferramentas"]
 
 export default function StackTechnologies() {
     const [activeFilter, setActiveFilter] = useState("Todos")
+    const { ref, isVisible } = useInView<HTMLElement>();
 
     const filtered =
         activeFilter === "Todos"
             ? technologies
             : technologies.filter((tech) => tech.category === activeFilter)
     return (
-        <section id="stack">
+        <section
+            id="stack"
+            ref={ref}
+            className={cn(
+                "transition-all duration-700 ease-out",
+                isVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-8"
+            )}
+        >
             <span className="flex flex-row gap-2 text-main-green pb-5">02. <p>Habilidade técnicas</p></span>
             <h2 className="text-[22px] text-white">Tecnologias que utilizo</h2>
 

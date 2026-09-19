@@ -1,6 +1,10 @@
+"use client";
+
 import ButtonHero from "../components/button_hero";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { Mail } from 'lucide-react';
+import { cn } from "@/lib/utils";
+import { useInView } from "@/hooks/use_in_view";
 
 type contactIcons = {
     githubUrl?: string
@@ -13,8 +17,18 @@ export default function Contact({
     linkedinUrl = "#",
     emailUrl = "#"
 }: contactIcons) {
+    const { ref, isVisible } = useInView<HTMLElement>();
     return (
-        <section id="contact">
+        <section
+            id="contact"
+            ref={ref}
+            className={cn(
+                "transition-all duration-700 ease-out",
+                isVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-8"
+            )}
+        >
             <div>
                 <span className="flex flex-row gap-2 text-main-green pb-5">04. <p>Contato</p></span>
                 <h2 className="text-[22px] text-white">Entre em contato comigo</h2>
@@ -47,15 +61,15 @@ export default function Contact({
                     href={githubUrl}
                     target='_blank'
                     rel='noopener noreferrer'>
-                    <FaGithub className='text-main-text w-10 h-10 hover:text-main-green transition-colors' 
-                />
+                    <FaGithub className='text-main-text w-10 h-10 hover:text-main-green transition-colors'
+                    />
                 </a>
                 <a
                     href={linkedinUrl}
                     target='_blank'
                     rel='noopener noreferrer'>
-                    <FaLinkedin className='text-main-text w-10 h-10 hover:text-main-green transition-colors' 
-                />
+                    <FaLinkedin className='text-main-text w-10 h-10 hover:text-main-green transition-colors'
+                    />
                 </a>
             </div>
         </section>

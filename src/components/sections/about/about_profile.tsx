@@ -1,3 +1,5 @@
+"use client";
+
 import {
     Card,
     CardContent,
@@ -5,10 +7,22 @@ import {
     CardHeader,
 } from "@/components/ui/card"
 import { AboutProfileCard } from "./about_profile_card"
+import { cn } from "@/lib/utils";
+import { useInView } from "@/hooks/use_in_view";
 
 export default function AboutProfile() {
+    const { ref, isVisible } = useInView<HTMLElement>();
+
     return (
-        <section>
+        <section
+            ref={ref}
+            className={cn(
+                "transition-all duration-700 ease-out",
+                isVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-8"
+            )}
+        >
             <span className="flex flex-row gap-2 text-main-green pb-6">01. <p>Sobre</p></span>
             <Card className="w-full flex flex-col gap-7 max-w-sm bg-cards">
                 <CardHeader className="flex flex-col gap-5">
@@ -16,18 +30,18 @@ export default function AboutProfile() {
 
                     <CardDescription className="text-main-text flex flex-col gap-4">
                         <span>
-                            Minha história na tecnologia é guiada por muita curiosidade 
-                            e pelo prazer de ver um sistema funcionando do zero. 
-                            Com 3 anos dedicados a estudar e colocar a mão na massa no 
-                            desenvolvimento Full-Stack, venho construindo uma base sólida 
+                            Minha história na tecnologia é guiada por muita curiosidade
+                            e pelo prazer de ver um sistema funcionando do zero.
+                            Com 3 anos dedicados a estudar e colocar a mão na massa no
+                            desenvolvimento Full-Stack, venho construindo uma base sólida
                             em arquitetura web, resolução de problemas e boas práticas de código.
-                            Estou em um momento muito dinâmico da minha carreira, onde cada projeto 
-                            é uma oportunidade de absorver novos conhecimentos, aprimorar minhas habilidades 
-                            técnicas e colaborar ativamente com equipes que valorizam a inovação 
+                            Estou em um momento muito dinâmico da minha carreira, onde cada projeto
+                            é uma oportunidade de absorver novos conhecimentos, aprimorar minhas habilidades
+                            técnicas e colaborar ativamente com equipes que valorizam a inovação
                             e o crescimento mútuo.
                         </span>
                         <span>
-                            Se há um problema complexo para resolver, 
+                            Se há um problema complexo para resolver,
                             estou sempre pronto para pesquisar, testar e entregar a melhor solução.
                         </span>
                     </CardDescription>

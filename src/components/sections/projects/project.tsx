@@ -29,7 +29,7 @@ export default function Project() {
     const { ref, isVisible } = useInView<HTMLElement>();
 
     return (
-        <section 
+        <section
             id="projects"
             ref={ref}
             className={cn(
