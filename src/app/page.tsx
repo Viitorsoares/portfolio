@@ -6,7 +6,7 @@ import StackTechnologies from "@/components/sections/technologies/stack_technolo
 
 export default function Home() {
   return (
-    <main className="px-5 flex flex-col gap-25">
+    <main className="w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 flex flex-col gap-20 sm:gap-24 lg:gap-28 xl:gap-32">
       <HeroProfile />
       <AboutProfile />
       <StackTechnologies />

@@ -23,9 +23,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="pt-br"
-      className={`${rubikSans.variable} ${jetBrainsMono.variable} h-full antialiased`}
+      className={`${rubikSans.variable} ${jetBrainsMono.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="min-h-full flex flex-col text-fo bg-background pt-50">
+      <body className="min-h-full flex flex-col overflow-x-hidden text-fo bg-background pt-28 sm:pt-36 lg:pt-44 xl:pt-50">
         <Header />
         {children}
         <Footer />

@@ -33,18 +33,18 @@ export default function Project() {
             id="projects"
             ref={ref}
             className={cn(
-                "transition-all duration-700 ease-out",
+                "scroll-mt-28 transition-all duration-700 ease-out",
                 isVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-8"
             )}
         >
             <div>
-                <span className="flex flex-row gap-2 text-main-green pb-5">03. <p>Projetos</p></span>
-                <h2 className="text-[22px] text-white">Soluções em destaque</h2>
+                <span className="flex flex-row gap-2 text-main-green text-sm sm:text-base pb-4 sm:pb-5">03. <p>Projetos</p></span>
+                <h2 className="text-xl sm:text-22 lg:text-2xl text-white">Soluções em destaque</h2>
             </div>
 
-            <div className="grid grid-cols-1">
+            <div className="grid grid-cols-1 gap-6 mt-8 sm:mt-9 md:grid-cols-2 lg:gap-8">
                 {projects.map((project, index) => (
                     <CardImageProject key={index} {...project} />
                 ))}

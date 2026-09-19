@@ -30,7 +30,8 @@ export default function HamburgerMenu({
         <>
             <Menu
                 onClick={() => setIsOpen(true)}
-                className='text-main-text cursor-pointer'
+                aria-label='Abrir menu'
+                className='text-main-text cursor-pointer w-6 h-6'
             />
 
             {isOpen && (
@@ -41,7 +42,7 @@ export default function HamburgerMenu({
             )}
 
             <aside
-                className={`fixed top-0 right-0 h-full w-full bg-background border-l border-main-text/20 z-50 flex flex-col justify-between transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"
+                className={`fixed top-0 right-0 h-full w-full max-w-full sm:max-w-sm overflow-y-auto overscroll-contain bg-background border-l border-main-text/20 z-50 flex flex-col justify-between transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
                 <div>

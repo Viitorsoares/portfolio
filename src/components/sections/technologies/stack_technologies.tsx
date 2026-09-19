@@ -22,21 +22,21 @@ export default function StackTechnologies() {
             id="stack"
             ref={ref}
             className={cn(
-                "transition-all duration-700 ease-out",
+                "scroll-mt-28 transition-all duration-700 ease-out",
                 isVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-8"
             )}
         >
-            <span className="flex flex-row gap-2 text-main-green pb-5">02. <p>Habilidade técnicas</p></span>
-            <h2 className="text-[22px] text-white">Tecnologias que utilizo</h2>
+            <span className="flex flex-row gap-2 text-main-green text-sm sm:text-base pb-4 sm:pb-5">02. <p>Habilidade técnicas</p></span>
+            <h2 className="text-xl sm:text-22 lg:text-2xl text-white">Tecnologias que utilizo</h2>
 
-            <div className="flex flex-wrap gap-3 mb-8 mt-9">
+            <div className="flex flex-wrap gap-2 sm:gap-3 mb-6 sm:mb-8 mt-6 sm:mt-9">
                 {filters.map((filter) => (
                     <Badge
                         key={filter}
                         onClick={() => setActiveFilter(filter)}
-                        className={`px-4 py-4 rounded-full border text-sm bg-background text-main-text transition-color cursor-pointer ${activeFilter === filter
+                        className={`px-3 py-3 sm:px-4 sm:py-4 rounded-full border text-xs sm:text-sm bg-background text-main-text transition-color cursor-pointer ${activeFilter === filter
                             ? "border-main-green text-main-green"
                             : "border-main-text text-main-text hover:border-gray-500"
                             } `}
@@ -46,7 +46,7 @@ export default function StackTechnologies() {
                 ))}
             </div>
 
-            <div className="grid grid-cols-3 gap-2.5">
+            <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 sm:gap-3 md:grid-cols-4 lg:grid-cols-5 lg:gap-4 xl:grid-cols-6">
                 {filtered.map((tech) => (
                     <CardTechnologies
                         key={tech.name}

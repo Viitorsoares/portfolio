@@ -17,18 +17,18 @@ export default function AboutProfile() {
         <section
             ref={ref}
             className={cn(
-                "transition-all duration-700 ease-out",
+                "scroll-mt-28 transition-all duration-700 ease-out",
                 isVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-8"
             )}
         >
-            <span className="flex flex-row gap-2 text-main-green pb-6">01. <p>Sobre</p></span>
-            <Card className="w-full flex flex-col gap-7 max-w-sm bg-cards">
-                <CardHeader className="flex flex-col gap-5">
-                    <h2 className="text-white text-[22px]">Um pouco sobre mim</h2>
+            <span className="flex flex-row gap-2 text-main-green text-sm sm:text-base pb-5 sm:pb-6">01. <p>Sobre</p></span>
+            <Card className="w-full flex flex-col gap-6 sm:gap-7 bg-cards sm:[--card-spacing:--spacing(6)] lg:[--card-spacing:--spacing(8)]">
+                <CardHeader className="flex flex-col gap-4 sm:gap-5">
+                    <h2 className="text-white text-xl sm:text-22 lg:text-2xl">Um pouco sobre mim</h2>
 
-                    <CardDescription className="text-main-text flex flex-col gap-4">
+                    <CardDescription className="text-main-text text-sm sm:text-base flex flex-col gap-4 lg:max-w-4xl">
                         <span>
                             Minha história na tecnologia é guiada por muita curiosidade
                             e pelo prazer de ver um sistema funcionando do zero.
@@ -47,7 +47,7 @@ export default function AboutProfile() {
                     </CardDescription>
                 </CardHeader>
 
-                <CardContent className="flex flex-col gap-3">
+                <CardContent className="grid grid-cols-1 gap-3 md:grid-cols-3 md:gap-4">
                     <AboutProfileCard
 
                         label={"Experiência"}
