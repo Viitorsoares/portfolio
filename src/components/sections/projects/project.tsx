@@ -8,7 +8,7 @@ type project = React.ComponentProps<typeof CardImageProject>
 
 const projects: project[] = [
     {
-        imageUrl: "/images/vagaja.jpg",
+        imageUrl: "/images/vagaja-6.png",
         name: "Vagaja — Encontre Vaga sem Rodar",
         description: "Conecta motoristas e agentes de zona azul em um mapa colaborativo de vagas disponíveis, otimizando a ocupação das ruas e facilitando a gestão do estacionamento urbano.",
         tech: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
@@ -16,7 +16,7 @@ const projects: project[] = [
         demoUrl: "/"
     },
     {
-        imageUrl: "/images/dashbord.jpg",
+        imageUrl: "/images/biblioteca-3.png",
         name: "Biblioteca — Sistema de Empréstimos de livros",
         description: "Sistema para controlar o acervo de livros da igreja: quem pegou emprestado, quando devolve, e o que está disponível. Dados salvos na nuvem, acessíveis de onde a secretaria ou biblioteca precisar.",
         tech: ["React", "JavaScript", "CSS", "Bootstrap", "Node.js", "Express", "MySQL"],
