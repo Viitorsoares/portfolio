@@ -13,7 +13,12 @@ export default function HeroProfileDescription() {
             </div>
             <div className="w-full flex flex-col sm:flex-row sm:flex-wrap gap-3" >
                 <ButtonHero title={"Ver projetos"} href="#projects"  className="w-full sm:w-auto p-6 text-base font-medium bg-button-green hover:bg-button-green/80 text-main-text" />
-                <ButtonHero title={"Baixar CV"}  icon={Download} className="w-full sm:w-auto p-6 text-base font-medium bg-background hover:bg-background cursor-pointer border-button-green  text-main-text" />
+                <ButtonHero 
+                title={"Baixar CV"}  
+                icon={Download} 
+                href="/Currículo.pdf"
+                download="Currículo.pdf"
+                className="w-full sm:w-auto p-6 text-base font-medium bg-background hover:bg-background cursor-pointer border-button-green  text-main-text" />
             </div>
         </div>
 

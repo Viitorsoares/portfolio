@@ -9,7 +9,7 @@ const menuItems = [
     { title: "Contatos", href: "#contact" },
 ]
 
-const resumeUrl = "/resume.pdf"
+const resumeUrl = "/Currículo.pdf"
 const githubUrl = "https://github.com/Viitorsoares"
 const linkedinUrl = "https://linkedin.com/in/viitorsoares/"
 const emailUrl = "mailto:viitorgab.soares@gmail.com"
@@ -23,7 +23,6 @@ export default function Header() {
                     <h1 className='text-main-text'>vitors.dev</h1>
                 </div>
 
-                {/* Navegação tradicional — apenas em telas md+ */}
                 <div className='hidden md:flex items-center gap-6 lg:gap-8'>
                     <ul className='flex items-center gap-5 lg:gap-7'>
                         {menuItems.map((item) => (
@@ -60,7 +59,6 @@ export default function Header() {
                     </a>
                 </div>
 
-                {/* Menu hamburguer — apenas em telas menores que md */}
                 <div className='md:hidden'>
                     <HamburgerMenu
                         items={menuItems}

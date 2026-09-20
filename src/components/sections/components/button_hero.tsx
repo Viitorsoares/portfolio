@@ -7,9 +7,20 @@ interface ButtonHeroProps {
     href?: string
     icon?: LucideIcon | IconType
     className?: string
+    download?: string
+    target?: string
+    rel?: string
 }
 
-export default function ButtonHero({ title, href, icon: Icon, className }: ButtonHeroProps) {
+export default function ButtonHero({ 
+    title, 
+    href, 
+    icon: Icon, 
+    className,
+    download,
+    target,
+    rel
+ }: ButtonHeroProps) {
     const content = (
         <>
             {title}
@@ -19,7 +30,11 @@ export default function ButtonHero({ title, href, icon: Icon, className }: Butto
 
     if (href) {
         return (
-            <Button render={<a href={href} />} nativeButton={false} className={className}>
+            <Button 
+                render={<a href={href} download={download} target={target} rel={rel} />} 
+                nativeButton={false} 
+                className={className}
+            >
                 {content}
             </Button>
         )
