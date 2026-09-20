@@ -11,7 +11,6 @@ export default function HeroProfile() {
                 <HeroProfileImage
                     name={"Vitor Soares"}
                     role={"Desenvolvedor Full-Stack"}
-                    yearsExp={3}
                     imageUrl={"/images/profile.png"}
                     openToWork
                 />
