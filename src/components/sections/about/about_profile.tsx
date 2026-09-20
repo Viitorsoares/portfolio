@@ -30,19 +30,10 @@ export default function AboutProfile() {
 
                     <CardDescription className="text-main-text text-sm sm:text-base flex flex-col gap-4 lg:max-w-4xl">
                         <span>
-                            Minha história na tecnologia é guiada por muita curiosidade
-                            e pelo prazer de ver um sistema funcionando do zero.
-                            Com 3 anos dedicados a estudar e colocar a mão na massa no
-                            desenvolvimento Full-Stack, venho construindo uma base sólida
-                            em arquitetura web, resolução de problemas e boas práticas de código.
-                            Estou em um momento muito dinâmico da minha carreira, onde cada projeto
-                            é uma oportunidade de absorver novos conhecimentos, aprimorar minhas habilidades
-                            técnicas e colaborar ativamente com equipes que valorizam a inovação
-                            e o crescimento mútuo.
+                            Minha trajetória na tecnologia é movida pela curiosidade e pelo entusiasmo de transformar ideias em sistemas funcionais desde o zero. Há 3 anos venho estudando e colocando em prática o desenvolvimento Full-Stack, construindo uma base sólida em desenvolvimento web, resolução de problemas e boas práticas de programação. Atualmente, estou em uma fase de constante evolução profissional, na qual cada projeto representa uma oportunidade de aprender, aprimorar minhas habilidades técnicas e contribuir de forma ativa com equipes que valorizam inovação, colaboração e crescimento.
                         </span>
                         <span>
-                            Se há um problema complexo para resolver,
-                            estou sempre pronto para pesquisar, testar e entregar a melhor solução.
+                            Estou finalizando minha formação em Análise e Desenvolvimento de Sistemas e também já concluí cursos na área, como a Formação Full-Stack JavaScript da OneBitCode. Tenho perfil curioso e gosto de enfrentar desafios que exigem pesquisa, testes e aprendizado contínuo. Quando surge um problema complexo, meu objetivo é entender suas causas, buscar diferentes abordagens e desenvolver uma solução eficiente e bem estruturada.
                         </span>
                     </CardDescription>
                 </CardHeader>

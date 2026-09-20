@@ -12,7 +12,7 @@ export default function HeroProfile() {
                     name={"Vitor Soares"}
                     role={"Desenvolvedor Full-Stack"}
                     yearsExp={3}
-                    imageUrl={"/images/profile.jpg"}
+                    imageUrl={"/images/profile.png"}
                     openToWork
                 />
             </div>
